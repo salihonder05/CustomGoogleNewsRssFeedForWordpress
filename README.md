@@ -9,9 +9,7 @@ A Custom RSS FEED Script For Wordpress Blogs - For Google News or Other Services
   - Add new field group with the condition of "Post Type -> Post"
   - Add a new field named "Google News Status"
   - Field type must be TRUE/FALSE.
-  - You change your interface options.
 
 - Use the ".htaccess" file to beautify the feed URL. So, your feed URL will be "yoursite.com/news-feed" instead of "yoursite.com/news-feed.php"
-- Working Now => /googleNews -> googleNews.php
 
 - If you want to add another RSS feed for another services (Bundle, Bing News or etc.), you should copy/edit/rename "google-news.php" file and add new rule into the .htaccess file.
