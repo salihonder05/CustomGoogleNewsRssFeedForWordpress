@@ -51,7 +51,7 @@ $result = $getLastPostModifiedTime['post_modified'];
 while($row = $getLast25Post->fetch(PDO::FETCH_OBJ)){
 echo "<item>";
 	echo "<guid isPermaLink='true'>" .$row->guid."</guid>";
-	echo "<pubDate>".date('D, d M Y H:i:s',strtotime($row->post_modified))."</pubDate>";
+	echo "<pubDate>".date('D, d M Y H:i:s',strtotime($row->post_modified))." +0300</pubDate>";
 	echo "<title>".$row->post_title. "</title>";
 	echo "<link>".$row->guid."</link>";
 	echo "<description>".$row->post_excerpt.'</description>';
